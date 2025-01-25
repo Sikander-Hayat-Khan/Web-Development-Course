@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* #yellow {
+            color: yellow;
+            } */
+
+        /* The specificity of this selector is 10 */
+        div [data-x=a] {
+            color: yellow ;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* a .harryclass .rohan-class [href]:hover {
+
+        } */
+
+        /* 
+        Specifity of the above is:
+        a -> element selector -> 1
+        .harryclass -> class -> 10
+        .rohan-class -> class -> 10
+        [href] -> Attribute Selector -> 10
+        :hover -> psuedo-class -> 10
+
+        Specificity -> 1+10+10+10+10 = 41
+        */
+
+        /* 
+        Cascade Algorithm:
+
+        . Determines which property will be applied in css and which will not be applied
+
+        . Determines winning property
+
+        Rules:
+
+        1. position and order of appearance are important
+
+        2. Specificity: Determines which CSS Selector has the strongest match. Taken into consideration when different types of elements are used
+
+        Inline CSS > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+        3. Origin: The order in which CSS appears and where it comes from
+        Browser's Style Sheet => called as User Agent Style Sheet
+
+        4. Importance: If you apply a tag of importance then it will effect the Specificity 
+
+        o Attribute Selector:
+            data-x = "a"
+        */
+
+        /* Note:
+        Avoid inline css 
+        Avoid use of !important 
+        Use Selectors with low specificity so that can be easily changed */
+        
+        </style>
+</head>
+<body>
+    <div>
+        <h1 class="cred cpurple" id="yellow" data-x="a">
+            CSS Specificity
+        </h1>
+    </div>
+</body>
+</html>
