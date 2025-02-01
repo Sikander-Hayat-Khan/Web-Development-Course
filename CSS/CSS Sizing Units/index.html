@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 12px;
+        }
+        .box {
+            border: 2px solid black;
+            /* width: 1536px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        .container {
+            border: 2px solid black;
+            /* width: 1536px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .container div {
+            /* font-size: 1.5em; */
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+        .container div p {
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont {
+            background-color: red;
+            color: yellow;
+            font-size: 1.5em;
+            width: 100vmin; /* 100vmin = 100vh in this device and not in all devices */
+            margin: auto;
+        }
+        /*
+        . 1px = (1/196) * (1 inch)
+        . vw -> viewport width
+        . margin auto will center online block elementa and not inline element
+        . em -> inherits font size from parent element and multiple it with the factor with (em) like 1em, 1.4em etc (1.4 * 18px)
+        . rem -> root em (according to font size of html set as here is 12px)
+        . vmax & vmin -> In laptop vmin is height and vmax is width while in mobile vmin is width and vmax is height 
+        */
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias quas provident dolore. Nemo ipsa quibusdam officiis, mollitia deserunt perferendis maiores impedit laudantium sapiente velit ut earum, dolorum illo est laborum quis vel. Officia mollitia quod eveniet id consequatur dolorum sequi non fugit nobis similique ipsa laborum maxime possimus iure quis, dolorem repudiandae, optio consequuntur sint.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio cumque quibusdam fuga, dignissimos quo neque possimus accusantium nihil veniam culpa odit. Reprehenderit laborum enim vel voluptate necessitatibus atque iste saepe inventore ad accusantium placeat in, cupiditate, itaque tempore ratione at? Suscipit enim voluptates doloribus nisi fugit ea a corporis, autem in sed dolore ab voluptatibus laborum error. Unde veniam nisi quis, saepe, aut ea blanditiis sunt sapiente, voluptates repudiandae ex. Molestias exercitationem laboriosam libero, hic illum doloremque saepe magnam, nam, blanditiis quis sapiente dolorum aperiam maxime similique sed repellat ratione. Asperiores maiores nam totam suscipit sequi distinctio aliquid rem deserunt doloremque, tempora tempore quis saepe nisi enim dicta eligendi nesciunt nulla consequatur harum odit commodi. Adipisci alias officiis soluta veniam maxime eos est exercitationem, minima libero commodi minus in eveniet cum voluptatibus saepe, optio itaque et sunt incidunt qui similique necessitatibus nam ad quisquam? Quos qui voluptatibus laboriosam officia.
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate repellendus maxime soluta facere recusandae delectus numquam, deserunt inventore facilis labore?
+            </p>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
 </body>
 </html>

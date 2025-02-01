@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid red;
+            /* display: inline-block; */
+            /* display: */ /* none; removes teh whole element and space it occupies */
+            /* visibility: hidden; */ /* only deletes the element and not the space it occupies */
+            display: inline-flex;
+            justify-content: center;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .box2 {
+            border: 2px solid yellow;
+        }
+
+        .boxes {
+            padding: 20px;
+            margin: 10px;
+            /* display: inline-block; */
+            width: 200px;
+            /* display: flex; */
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .box3 {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <span class="box2 boxes">
+        I am a good
+    </span>
+    <span class="box3 boxes">
+        boy
+    </span>
+</body>
+
+</html>

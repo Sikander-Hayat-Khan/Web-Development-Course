@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: rgba(31, 41, 51, 1);
+            height: 26vh;
+        }
+        .container {
+            display: flex;
+            height: 16vh;
+            /* border: 2px solid red; */
+            padding: 2rem 0;
+        }
+        .CWH {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: rgb(216, 180, 254);
+            padding-left: 16px;
+            margin: 0px 16px;
+            cursor: pointer;
+        }
+        .orderlist ol {
+            list-style: none;
+            position: relative;
+            display: flex;
+            /* border: 2px solid white; */
+            left: 16vw;
+        }
+        .orderlist ol li {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin: 8px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .orderlist ol li:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(126, 34, 206);
+            text-decoration-thickness: 2px;
+            padding: 2px 0px;
+        }
+        .orderlist ol span {
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+        .darkmode {
+            padding: 8px 0px;
+        }
+        .buttons {
+            position: relative;
+            left: 16vmax;
+        }
+        .buttons button {
+            padding: 8px 12px;
+            margin: 0px 4px;
+            color: white;
+            background-color: rgb(168, 85, 247);
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 900px;
+            height: 40px;
+            width: 4.7rem;
+            font-family: "Poppins", sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: rgb(107 33 168);
+        }
+        .seperation {
+            background-color: rgb(107 114 128);
+            height: 1px;
+        }
+        .SecondNav {
+            /* border: 2px solid red; */
+            height: 8vmin;
+            margin: 1vmin 3vmax;
+            display: flex;
+        }
+        .homeicon {
+            height: 35px;
+            width: 35px;
+            padding-top: 10px;
+        }
+        .homeicon img {
+            cursor: pointer;
+        }
+        .SecondNav ol {
+            display: flex;
+            list-style: none;
+            margin: 1.7vmin 22vmax;
+        }
+        .SecondNav ol li {
+            color: rgb(216, 180, 254);
+            margin-left: 2vmax;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .SecondNav ol li:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(126, 34, 206);
+            text-decoration-thickness: 2px;
+            padding: 2px 0px;
+        }
+        .SecondNav input {
+            position: absolute;
+            left: 76.5vw;
+            top: 17.5vh;
+            height: 45px;
+            width: 300px;
+            border: 3px solid rgb(168, 85, 247);
+            border-radius: 4px;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: rgb(0,0,0,0.1);
+        }
+        .search {
+            position: absolute;
+            top: 18.5vmin;
+            left: 93vmax;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="CWHDiv">
+                <span class="CWH">&lt;/&gt; CodeWithHarry</span>
+            </div>
+            <div class="orderlist">
+                <ol>
+                    <li>Home</li>
+                    <li>Courses</li>
+                    <li>Tutorial</li>
+                    <li>Blog</li>
+                    <li>Notes</li>
+                    <li>Contact</li>
+                    <li>My Gear</li>
+                    <li>Work With Us</li>
+                    <span class="darkmode">
+                        <img src="darkmode.svg" alt="">
+                    </span>
+                </ol>
+            </div>
+            <div class="buttons">
+                <button>Login</button>
+                <button>Signup</button>
+            </div>
+        </div>
+        <div class="seperation"></div>
+        <div class="SecondNav">
+            <div class="homeicon">
+                <img height="25px" src="home.svg" alt="">
+            </div>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+                <li>PHP</li>
+                <li>REACT JS</li>
+            </ol>
+            <input type="search" placeholder="Search...">
+            <img class="search" width="30px" src="search.svg" alt=""> 
+    </nav>
+</body>
+</html>
